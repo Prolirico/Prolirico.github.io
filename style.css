@@ -1,0 +1,6 @@
+body {
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/15697.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+}
