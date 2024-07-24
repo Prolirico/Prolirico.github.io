@@ -23,3 +23,23 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+function copyToClipboard(email) {
+    // Crea un elemento de texto temporal
+    var tempInput = document.createElement("input");
+    tempInput.value = email;
+    document.body.appendChild(tempInput);
+
+    // Selecciona el contenido del elemento de texto
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // Para dispositivos móviles
+
+    // Copia el texto seleccionado al portapapeles
+    document.execCommand("copy");
+
+    // Remueve el elemento de texto temporal
+    document.body.removeChild(tempInput);
+
+    // Opcional: muestra una alerta de confirmación
+    alert("Correo copiado al portapapeles: " + email);
+}
