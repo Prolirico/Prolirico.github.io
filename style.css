@@ -560,9 +560,13 @@ span{
     .servicios h2{
         margin-bottom: 3rem;
     }
+    .servicios h4{
+        margin-bottom: 1rem;
+    }
     .services-container{
         grid-template-columns: repeat(1,1fr);
     }
+
 }
 /**/
 .projects-container {
